@@ -1,0 +1,38 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Mon Mar 12 09:29:49 2018
+     Path: "C:\Users\User\Downloads\agadage_project_2\Project2\Checkin"
+     Args: *.h, *.cpp, *.cs, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      32
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                 Checkin.h       class                            Checkin      33      17      17
+                 Checkin.h    function                           copyFile      55       7       2
+                 Checkin.h    function                 checkDependentFile      81      28       7
+                 Checkin.h    function                createDependencyMap     112      16       4
+                 Checkin.h    function                      isFilePresent     190      13       3
+                 Checkin.h    function                            addFile      66      11       1
+                 Checkin.h    function                              setdb     132       4       1
+                 Checkin.h    function                         acceptFile     140      46      10
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+               Checkin.cpp    function                               main      26       5       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

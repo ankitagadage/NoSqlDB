@@ -1,0 +1,6 @@
+﻿  Query.cpp
+c:\users\user\downloads\agadage_project_2\project2\nosqldb\query\query.h(50): error C2059: syntax error: ')'
+  c:\users\user\downloads\agadage_project_2\project2\nosqldb\query\query.h(85): note: see reference to class template instantiation 'NoSqlDb::Conditions<P>' being compiled
+c:\users\user\downloads\agadage_project_2\project2\nosqldb\query\query.h(50): error C2238: unexpected token(s) preceding ';'
+c:\users\user\downloads\agadage_project_2\project2\nosqldb\query\query.h(90): error C2039: 'match': is not a member of 'NoSqlDb::Conditions<P>'
+c:\users\user\downloads\agadage_project_2\project2\nosqldb\query\query.h(90): error C2447: '{': missing function header (old-style formal list?)

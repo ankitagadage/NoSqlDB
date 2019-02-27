@@ -1,0 +1,53 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Mon Mar 12 10:05:45 2018
+     Path: "C:\Users\User\Downloads\agadage_project_2\Project2\RepositoryCore"
+     Args: *.h, *.cpp, *.cs, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      60
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+          RepositoryCore.h       class                     RepositoryCore      69      35      21
+          RepositoryCore.h    function                     RepositoryCore      70       1       1
+          RepositoryCore.h    function                     RepositoryCore      71       1       1
+          RepositoryCore.h    function                        getRepoDest     112       5       1
+          RepositoryCore.h    function                           checkOut     214      15       2
+          RepositoryCore.h    function                          getDbCore     311       3       1
+          RepositoryCore.h    function              readDependencyfromXML     317       3       1
+          RepositoryCore.h    function                          displayDb     324       3       1
+          RepositoryCore.h    function                    createDirectory     328      10       2
+          RepositoryCore.h    function                    directoryExists     341      13       3
+          RepositoryCore.h    function                            readXml     394       3       1
+          RepositoryCore.h    function                          persistDb     403       3       1
+          RepositoryCore.h    function                       saveMaptoXML     411       3       1
+          RepositoryCore.h    function                        BrowseFiles     439      20       3
+          RepositoryCore.h    function                    ~RepositoryCore     467       2       1
+          RepositoryCore.h    function               getDependencyOfFiles     122      15       4
+          RepositoryCore.h    function               checkInMultipleFiles     142       6       2
+          RepositoryCore.h    function                   getFilesToClosed     152      28       5
+          RepositoryCore.h    function                  closeDependencies     185      23       3
+          RepositoryCore.h    function                        checkinFile     233      50       9
+          RepositoryCore.h    function                  dependencyhandler     287      21       4
+          RepositoryCore.h    function                       checkinFiles     358      30       5
+          RepositoryCore.h    function                        BrowseFiles     419      15       5
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+        RepositoryCore.cpp    function                               main      29      26       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

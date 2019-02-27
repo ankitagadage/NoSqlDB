@@ -1,0 +1,29 @@
+#include "Checkout.h"
+
+
+
+Checkout::Checkout()
+{
+}
+
+
+
+void Checkout::copyFileToStage(const std::vector<std::string>& paramVec, const std::string & rootPath, const std::string & destPath)
+{
+	for (auto x : paramVec)
+	{
+		x = regex_replace(x, std::regex("::"), "/");
+		std::string temp = "../root/" + x;
+		size_t indexoffile = x.find_last_of("/");
+		std::string filename_ = x.substr(indexoffile + 1, x.size());
+		size_t indexofdot = filename_.find_last_of(".");
+		std::string dstfilename = filename_.substr(0, indexofdot);
+		std::string temp1 = destPath + "/" + dstfilename;
+		FileSystem::File::copy(temp, temp1, false); //Copying File to stage directory.
+	}
+
+}
+
+Checkout::~Checkout()
+{
+}

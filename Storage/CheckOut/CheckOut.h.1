@@ -1,0 +1,89 @@
+#pragma once
+#include "../NoSQLDB/Executive/Executive.h"
+#include "../FileMgr/FileMgr.h"
+#include "../Version/Version.h"
+#include <algorithm>
+using namespace NoSqlDb;
+class Checkout
+{
+public:
+	Checkout();
+	template <typename T>
+	void extractFile(DbCore<T>& db,std::string fileNamespace, std::string dest,int version = 0);
+	template <typename T>
+	std::vector<std::string> getDependentFiles(DbCore<T>& db,std::string key);
+	void copyFileToStage(const std::vector<std::string>& paramVec, const std::string& rootPath, const std::string& destPath);
+
+	~Checkout();
+};
+
+template<typename T>
+inline void Checkout::extractFile(DbCore<T>& db, std::string fileNamespace,std::string dest, int version)
+{
+	Query q(db);
+	Query q1(db);
+
+	std::vector<std::string> result;
+	if (version == 0)
+	{
+		version = Version::getFileVersion(q1.getKeys(fileNamespace + fileName).keys());
+		result = q.getKeys(fileNamespace + fileName + "." + version).keys();
+	}
+	else
+	{
+		result = q.getKeys(fileNamespace + fileName + "." + version).keys();
+	}
+	for (int i = 0; i < result.size(); i++)
+	{
+		std::vector<std::string> dependentList = getDependentFiles(db,result[i]);
+		for (int j = 0; j < dependentList.size(); j++)
+		{
+			bool isCopySuccess = FileSystem::File::copy(db[dependent[j]].payLoad().value(), dest, false);
+
+		}
+	}
+}
+
+template<typename T>
+inline std::vector<std::string> Checkout::getDependentFiles(DbCore<T>& db, std::string key)
+{
+	std::vector<std::string> dependentList = db[key].children();
+	//dependentList.push_back(key);
+	int i = 0;
+	int j = dependentList.count();
+	While(i < j)
+	{
+		std::vector<std::string> newDependentList = db[dependentList[i]].children();
+		for (int k = 0; k < newDependentList.size(); k++)
+		{
+			if (std::find(dependentList.begin(), dependentList.end(), newDependentList[k] ) == dependentList.end())
+			{
+				if(newDependentList[k] != key)
+				dependentList.push_back(newDependentList[k]);
+			}
+		}
+		i++;
+		int j = dependentList.count();
+
+	}
+	return dependentList;
+}
+
+
+/*
+//This function fins outs the file name from a key specifed by user and copies to a stage location acceessible by user.
+void Checkout::copyFileToStage(const std::vector<std::string>& paramVec, const std::string& rootPath, const std::string& destPath)
+{
+	for (auto x : paramVec)
+	{
+		x = regex_replace(x, std::regex("::"), "/");
+		std::string temp = "../root/" + x;
+		size_t indexoffile = x.find_last_of("/");
+		std::string filename_ = x.substr(indexoffile + 1, x.size());
+		size_t indexofdot = filename_.find_last_of(".");
+		std::string dstfilename = filename_.substr(0, indexofdot);
+		std::string temp1 = destPath + "/" + dstfilename;
+		FileSystem::File::copy(temp, temp1, false); //Copying File to stage directory.
+	}
+}
+*/

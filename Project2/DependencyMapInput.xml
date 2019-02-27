@@ -1,0 +1,24 @@
+< ? xml version = "1.0" encoding = "utf-8" ? >
+
+  <Dependency>
+    <row>
+      <key>
+        FileManager::FileMgr.cpp.2
+      </key>
+      <VectorValues>
+        <Value>
+          CheckIn::CheckIn.cpp.2
+        </Value>
+      </VectorValues>
+    </row>
+    <row>
+      <key>
+        FileManager::FileMgr.h.2
+      </key>
+      <VectorValues>
+        <Value>
+          CheckIn::CheckIn.cpp.2
+        </Value>
+      </VectorValues>
+    </row>
+  </Dependency>

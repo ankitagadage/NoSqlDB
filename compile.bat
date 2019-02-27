@@ -1,0 +1,1 @@
+devenv Project3HelpWPF.sln /rebuild debug

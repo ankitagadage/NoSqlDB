@@ -1,0 +1,14 @@
+C:\Users\agadage\Downloads\Project3HelpWPF
+true
+true
+true
+false
+FolderSelection
+false
+true
+false
+false
+true
+false
+false
+false

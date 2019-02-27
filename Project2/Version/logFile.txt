@@ -1,0 +1,38 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Mon Mar 12 10:21:40 2018
+     Path: "C:\Users\User\Downloads\agadage_project_2\Project2\Version"
+     Args: *.h, *.cpp, *.cs, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      18
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                 Version.h       class                            Version      43      12      16
+                 Version.h    function                         getVersion      59      32       6
+                 Version.h    function                                  ]      63       2       1
+                 Version.h    function                                  ]      68       2       1
+                 Version.h    function                   getLatestVersion      95      22       4
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+               Version.cpp    function                            Version      30       2       1
+               Version.cpp    function                           ~Version      35       2       1
+               Version.cpp    function                     getFileVersion      39      15       3
+               Version.cpp    function                               main      60      20       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

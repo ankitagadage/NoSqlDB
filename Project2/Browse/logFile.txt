@@ -1,0 +1,43 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Mon Mar 12 09:22:54 2018
+     Path: "C:\Users\User\Downloads\agadage_project_2\Project2\Browse"
+     Args: *.h, *.cpp, *.cs, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      15
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                  Browse.h       class                             Browse      46      10       6
+              public data: std :: vector < std :: string > browseOnCategory ( DbCore < T > & db , std :: string & category ) ; 
+                  Browse.h    function                             Browse      60       2       1
+                  Browse.h    function                            ~Browse      66       2       1
+                  Browse.h    function                       browseByName     123      11       1
+                  Browse.h    function               viewContentinNotepad     138      21       2
+                  Browse.h    function                                  ]     149       1       1
+                  Browse.h    function                            getFile      72      35       5
+                  Browse.h    function                                  ]     100       1       1
+                  Browse.h    function                   browseOnCategory     112       7       2
+                  Browse.h    function                                  ]     114       2       1
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                Browse.cpp    function                               main      27       9       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+              public data: Browse.h : 50 - class Browse
+                std :: vector < std :: string > browseOnCategory ( DbCore < T > & db , std :: string & category ) ; 
+
+
+    searched     3 dirs
+   processed     2 files

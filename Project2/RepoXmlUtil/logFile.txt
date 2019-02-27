@@ -1,0 +1,35 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Mon Mar 12 10:08:32 2018
+     Path: "C:\Users\User\Downloads\agadage_project_2\Project2\RepoXmlUtil"
+     Args: *.h, *.cpp, *.cs, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      14
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+             RepoXmlUtil.h       class                        RepoXmlUtil      48       8       1
+             RepoXmlUtil.h    function                        saveDbToXml      62      10       1
+             RepoXmlUtil.h    function                      readDbFromXml      78       8       1
+             RepoXmlUtil.h    function             saveDependencyMaptoXML      92      25       3
+             RepoXmlUtil.h    function           readDependencyMapfromXML     122      23       6
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+           RepoXmlUtil.cpp    function                               main      14      12       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     3 dirs
+   processed     2 files

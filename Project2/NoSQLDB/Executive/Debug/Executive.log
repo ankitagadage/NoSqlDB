@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Executive.vcxproj, NoSqlDBLib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  DateTime.cpp
+  DbCore.cpp
+  Persist.cpp
+  Query.cpp
+  StringUtilities.cpp
+  Executive.cpp
+  Generating Code...
+  Executive.vcxproj -> C:\Users\agadage\Documents\Project3HelpWPF\Project3HelpWPF\Project3HelpWPF\Debug\NoSqlDB.lib
